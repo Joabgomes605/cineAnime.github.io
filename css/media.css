@@ -211,6 +211,8 @@
     }
 }
 
+
+
 /*425px*/
 
 @media (max-width:425px) {
@@ -798,6 +800,9 @@
         align-items: center;
         justify-content: center;
     }
+    .estatico{
+        min-width: 100%;
+    }
     .estatico h1{
         font-size: 0.8rem;
     }
@@ -823,7 +828,7 @@
     }
     
     .navegacao > ul > li > .login{
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
     .tv{
         width: 100%;
