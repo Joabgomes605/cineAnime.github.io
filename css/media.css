@@ -1,4 +1,7 @@
 @media (min-width:1440px) {
+    body{
+        overflow-x: hidden !important;
+    }
     .video_tv{
         min-width: 54%;
         min-height: 220px;
