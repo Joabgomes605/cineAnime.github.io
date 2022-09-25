@@ -16,6 +16,12 @@ submitButton.addEventListener("click", (e) => {
     if(email || senhaValue === "") {
         errorMsg.textContent = "Usuário(a) ou senha inválido(a)"
         errorMsg.classList = "error";
+
+        setTimeout(()=>{
+            errorMsg.textContent = "";
+            errorMsg.classList = "";
+        },5000)
+
         return;
     } else{
         errorMsg.style.display = "none";

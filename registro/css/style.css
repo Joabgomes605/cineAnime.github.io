@@ -12,8 +12,10 @@
     --color: #00e64d;
     --color-secundary : #FFFFFF;
     --color-terceira :#929292;
+    --quarta-cor:#000000;
     --background-color:#00e64d;
     --background-color-secundary:#ffffff;
+    --terceira-background-color: #26ff6f ;
 }
 
 main{
@@ -63,7 +65,7 @@ nav ul {
 nav ul li a {
     margin-right: 2rem;
     text-decoration: none;
-    color: var(--color-secundary);
+    color: var(--quarta-cor);
     font-weight: 600;
     background-color: var(--background-color);
     border-radius: 4px;
@@ -157,10 +159,10 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
 }
 .login_input{
-    height: 50px;
+    height: 60px;
     width: 100%;
     padding-left: 8px;
     border: unset;
@@ -190,23 +192,23 @@ nav ul li a:hover {
     width: 100%;
 }
 .login_submit{
-    height: 50px;
+    height: 60px;
     width: 100%;
     background-color: var(--background-color);
     outline: none;
     border: unset;
     background-size: 200%;
     margin-bottom: 2rem;
-    color: var(--color-secundary);
-    font-size: 1rem;
+    color: var(--quarta-cor);
+    font-size: 1.1rem;
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
     transition: .5s ease-in-out;
 }
 .login_submit:hover{
-    background-color: var(--color-secundary);
-    color: #00812b;
+    background-color: var(--background-color-secundary);
+    color: var(--quarta-cor);
 }
 .login_reset{
     font-size: 1rem;
