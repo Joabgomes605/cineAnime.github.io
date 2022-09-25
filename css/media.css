@@ -101,8 +101,13 @@
     .logo a p {
         font-size: 1.3rem;
     }
+    .navegacao{
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
     .navegacao ul{
-        margin-right: 0.8rem;
+        margin-right: 1.5rem;
         gap: 1rem;
     }
     .navegacao > ul > li > select{
