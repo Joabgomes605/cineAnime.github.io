@@ -233,9 +233,9 @@ main{
 }
 .video_tv{
     min-width: 57%;
-    min-height: 214px;
+    min-height: 220px;
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     right: 68%;
     background-image: url("../img/crossover_animes_gif.gif");
     background-repeat: no-repeat;
