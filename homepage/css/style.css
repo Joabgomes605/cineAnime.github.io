@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2? família=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?display=swap');
+
+:root{
+    --verde:#00e64d;
+    --preto:#141414;
+    --branco:#ffffff;
+    --cinza-branco:#AAA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+    background-color: var(--preto);
+    font-family: sans-serif;
+    color: var(--branco);
+}
+/*header*/
+.container1{
+    width: 100vw;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    margin-left: 1rem;  
+}
+.logo h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--verde);
+    font-family: 'Arial Black', Times;
+}
+nav{
+    width: 60%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: right;
+}
+nav #menu{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 3rem;
+    list-style: none;
+}
+nav #menu li a{
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+    color: var(--branco);
+    transition: .5s;
+    font-family:'Roboto', sans-serif;
+    font-weight: 600;
+}
+nav ul li a:hover{
+    color: var(--preto);
+    background-color: #c4c4c4;
+}
+.icon_login{
+    width: 10%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.icon_login .icon_container{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--verde);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.icon_container span{
+    font-size: 2rem;
+    color: var(--preto);
+}
+
+#btn-mobile{
+    display: none;
+}
+
+/*media-query*/
+@media (max-width:768px) {
+    .logo{
+        width: 50%;
+    }
+    #nav{
+        order: -1;
+        display: flex;
+        justify-content: left;
+        width: 30%;
+    }
+    #nav #menu{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 30px;
+        background-color: var(--preto);
+        width: 37%;
+        height: 0px;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: 300px;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--branco);
+    }
+    #hamburgue{
+        display: block;
+        width: 30px;
+        border-top: 2px solid;
+    }
+    #hamburgue::after, #hamburgue::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .5s;
+        position: relative;
+    }
+    #nav.active #hamburgue{
+        border-top-color: transparent;
+
+    }
+    #nav.active #hamburgue::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburgue::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+}
+
+@media (max-width:425px) {
+    .logo{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo a h2{
+        font-size: 1.8rem;
+    }
+    #nav{
+        order: -1;
+        display: flex;
+        justify-content: left;
+        width: 10%;
+    }
+    .icon_login{
+        width: 20%;
+    }
+    #nav #menu{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 30px;
+        background-color: var(--preto);
+        width: 100%;
+        height: 0px;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--branco);
+    }
+    #hamburgue{
+        display: block;
+        width: 30px;
+        border-top: 2px solid;
+    }
+    #hamburgue::after, #hamburgue::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .5s;
+        position: relative;
+    }
+    #nav.active #hamburgue{
+        border-top-color: transparent;
+
+    }
+    #nav.active #hamburgue::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburgue::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+}
+
+@media (max-width:375px) {
+    .logo{
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo a h2{
+        font-size: 1.5rem;
+    }
+    #nav{
+        order: -1;
+        display: flex;
+        justify-content: left;
+        width: 15%;
+    }
+    .icon_login{
+        width: 15%;
+    }
+    #nav #menu{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 30px;
+        background-color: var(--preto);
+        width: 100%;
+        height: 0px;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--branco);
+    }
+    #hamburgue{
+        display: block;
+        width: 30px;
+        border-top: 2px solid;
+    }
+    #hamburgue::after, #hamburgue::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .5s;
+        position: relative;
+    }
+    #nav.active #hamburgue{
+        border-top-color: transparent;
+
+    }
+    #nav.active #hamburgue::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburgue::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+}
+
+@media (max-width:320px) {
+    .logo{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .logo a h2{
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    #nav{
+        order: -1;
+        display: flex;
+        justify-content: left;
+        width: 20%;
+    }
+    .icon_login{
+        width: 20%;
+    }
+    .icon_login .icon_container{
+        width: 40px;
+        height: 40px;
+    }
+    #nav #menu{
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 30px;
+        background-color: var(--preto);
+        width: 100%;
+        height: 0px;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: var(--branco);
+    }
+    #hamburgue{
+        display: block;
+        width: 30px;
+        border-top: 2px solid;
+    }
+    #hamburgue::after, #hamburgue::before{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 2px;
+        margin-top: 5px;
+        background-color: currentColor;
+        transition: .5s;
+        position: relative;
+    }
+    #nav.active #hamburgue{
+        border-top-color: transparent;
+
+    }
+    #nav.active #hamburgue::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburgue::after{
+        transform: rotate(-135deg);
+        top: -6px;
+    }
+}
+
+/*header*/
+
+
+/*filme principal*/
+.filme_principal{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/kimetsu_no_yaiba.jpg");
+    background-size: cover;
+    height: 400px;
+}
