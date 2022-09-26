@@ -1,4 +1,7 @@
 @media (min-width:1440px) {
+    .navegacao ul {
+        margin-right: 4rem;
+    }
     body{
         overflow-x: hidden !important;
     }
@@ -44,6 +47,9 @@
     .logo a p{
         font-size: 1.5rem;
     }
+    .navegacao ul{
+        margin-right: 3rem;
+    }
     .navegacao > ul > li > select{
         padding: 8px 10px;
         font-size: 0.9  rem;
@@ -52,7 +58,7 @@
         padding: 10px 10px;
     }
     .navegacao > ul > li > .login{
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
     .estatico h1{
         font-size: 1.5rem;
@@ -108,19 +114,18 @@
     }
     .navegacao ul{
         width: 100%;
-        margin-right: 1.5rem;
         gap: 1rem;
     }
+    
     .navegacao > ul > li > select{
-        padding: 8px 10px;
-        font-size: 0.9rem;
+        display: none;
     }
     .navegacao > ul > li > .registro{
         padding: 9px 20px;  
     }
     
     .navegacao > ul > li > .login{
-        padding: 10px 10px;
+        padding: 10px 30px;
     }
     .container{
         height: 300px;
@@ -250,7 +255,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        padding-left: 55px;
     }
+
     .navegacao > ul > li > select{
         display: none;
     }
@@ -259,7 +266,7 @@
         padding: 10px 20px;
     }
     .navegacao > ul > li > .login{
-        padding: 10px 30px;
+        padding: 10px 40px;
     }
     .container{
         width: 100%;
@@ -528,15 +535,13 @@
     
     .navegacao{
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     .navegacao ul{
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
+        padding: 0px;
     }
     .navegacao > ul > li > select{
         display: none;
@@ -548,7 +553,7 @@
     }
     
     .navegacao > ul > li > .login{
-        padding: 10px 35px;
+        padding: 10px 40px;
     }
     .tv{
         width: 100%;
@@ -813,27 +818,18 @@
         font-size: 0.8rem;
     }
     
-    .navegacao{
-        width: 100%;
-    }
     .navegacao ul{
-        width: 100%;
+        min-width: 100%;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
+        padding-right: 4px;
     }
-    .navegacao > ul > li > select{
-        display: none;
+
+    .navegacao ul li .login{
+        padding: 10px 40px;
     }
-    
-    .navegacao > ul > li > .registro{
-        font-size: 1rem;
-    }
-    
-    .navegacao > ul > li > .login{
-        padding: 10px 35px;
-    }
+
     .tv{
         width: 100%;
         display: flex;

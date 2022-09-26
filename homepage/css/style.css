@@ -72,9 +72,8 @@ nav #menu li a{
     font-family:'Roboto', sans-serif;
     font-weight: 600;
 }
-nav ul li a:hover{
-    color: var(--preto);
-    background-color: #c4c4c4;
+nav #menu li a:hover{
+    color: var(--verde);
 }
 .icon_login{
     width: 10%;
@@ -424,8 +423,38 @@ nav ul li a:hover{
 .filme_principal{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     font-size: 1rem;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/kimetsu_no_yaiba.jpg");
     background-size: cover;
-    height: 400px;
+    height: calc(100vh - 70px);
+}
+.filme_principal .container{
+    padding-left: 1rem;
+}
+.filme_principal .descricao{
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--branco);
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.button:hover{
+    background-color: var(--branco);
+    color: var(--preto);
 }
