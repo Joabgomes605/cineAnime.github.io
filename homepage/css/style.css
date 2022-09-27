@@ -524,18 +524,22 @@ nav #menu li a:hover{
     display: flex;
     flex-direction: column;
 }
+
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
+    filter: brightness(50%);
     transition: .3s;
 }
 
 .box-filme:hover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            filter: brightness(100%);
 }
+
 @-webkit-keyframes scale-up-center {
     0% {
       -webkit-transform: scale(1);

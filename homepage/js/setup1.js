@@ -13,7 +13,7 @@ owl.owlCarousel({
         }
     },
     loop:true,
-    margin:5,
+    margin:6,
     autoplay:true,
     autoplayTimeout:1500,
     autoplayHoverPause:true
