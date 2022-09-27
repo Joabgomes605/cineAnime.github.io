@@ -533,14 +533,13 @@ nav #menu li a:hover{
     width: 100%;
     display: block;
     cursor: pointer;
-    filter: brightness(50%);
     transition: .3s;
 }
 
 .box-filme:hover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            filter: brightness(100%);
+            filter: brightness(50%);
 }
 
 @-webkit-keyframes scale-up-center {
@@ -568,17 +567,3 @@ nav #menu li a:hover{
     margin: 10px 10px;
 }
 
-.play{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-}
-.play i{
-    font-size: 2rem;
-    color: var(--preto);
-}
-.box-filme:hover + .play{
-    display: block;
-}
