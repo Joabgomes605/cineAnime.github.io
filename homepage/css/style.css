@@ -22,7 +22,12 @@ html,body{
     color: var(--branco);
 }
 /*header*/
-
+header{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/Animes/mini0.jpg");
+    background-size: cover;
+}
 .container1{
     width: 100vw;
     height: 60px;
@@ -424,8 +429,6 @@ nav #menu li a:hover{
 
 /*filme principal*/
 .filme_principal{
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/Animes/mini0.jpg");
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
