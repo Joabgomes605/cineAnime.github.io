@@ -528,20 +528,32 @@ nav #menu li a:hover{
     flex-direction: column;
 }
 
+.assistir{
+    position: absolute;
+    top: 85%;
+    left: 28%;
+    padding: 10px 30px;
+    background-color: var(--verde);
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--preto);
+    font-weight: 700;
+    z-index: 1000;
+}
+
 .box-filme{
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
     transition: .3s;
-}
 
+}
 .box-filme:hover{
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
             filter: brightness(50%);
 }
-
 @-webkit-keyframes scale-up-center {
     0% {
       -webkit-transform: scale(1);
@@ -561,9 +573,8 @@ nav #menu li a:hover{
       -webkit-transform: scale(1.1);
               transform: scale(1.1);
     }
-  }
+}
 
 .carrossel-animes h2{
     margin: 10px 10px;
 }
-
