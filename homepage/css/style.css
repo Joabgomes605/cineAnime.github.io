@@ -424,7 +424,7 @@ nav #menu li a:hover{
 
 /*filme principal*/
 .filme_principal{
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/mini8.jpg");
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/Animes/mini0.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
