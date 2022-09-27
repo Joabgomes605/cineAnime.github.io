@@ -449,6 +449,7 @@ nav #menu li a:hover{
     margin-top: 5%;
     font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--verde);
 }
 .button{
     background-color: rgba(0,0,0,.60);
@@ -521,7 +522,7 @@ nav #menu li a:hover{
     flex-direction: column;
 }
 .box-filme{
-    height: 300px;
+    height: 200px;
     width: 100%;
     display: block;
     cursor: pointer;
