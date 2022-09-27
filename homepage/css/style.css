@@ -22,14 +22,10 @@ html,body{
     color: var(--branco);
 }
 /*header*/
-header{
-    width: 100%;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/mini8.jpg");
-    background-size: cover;
-}
+
 .container1{
     width: 100vw;
-    height: 70px;
+    height: 60px;
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -428,12 +424,14 @@ nav #menu li a:hover{
 
 /*filme principal*/
 .filme_principal{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/mini8.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     font-size: 1rem;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 60px);
 }
 .filme_principal .container{
     width: 100%;
@@ -444,6 +442,11 @@ nav #menu li a:hover{
     text-align: justify;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    color: var(--cinza-branco);
+    transition: .3s;
+}
+.filme_principal .descricao:hover{
+    color: var(--branco);
 }
 .titulo{
     margin-top: 5%;
@@ -508,7 +511,7 @@ nav #menu li a:hover{
     }
   }
 .seta a {
-    color: var(--branco);
+    color: var(--verde);
     text-decoration: none;
 }
 .seta a span{
@@ -522,7 +525,7 @@ nav #menu li a:hover{
     flex-direction: column;
 }
 .box-filme{
-    height: 200px;
+    height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
