@@ -581,3 +581,9 @@ nav #menu li a:hover{
     color: var(--verde);
 }
 
+
+footer{
+    width: 100vw;
+    height: 300px;
+    background-color: var(--preto);
+}
