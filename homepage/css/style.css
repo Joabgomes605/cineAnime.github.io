@@ -22,6 +22,11 @@ html,body{
     color: var(--branco);
 }
 /*header*/
+header{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/mini8.jpg");
+    background-size: cover;
+}
 .container1{
     width: 100vw;
     height: 70px;
@@ -38,7 +43,9 @@ html,body{
 }
 .logo a{
     text-decoration: none;
-    margin-left: 1rem;  
+    margin-left: 1rem;
+    border: unset;
+    outline: none;
 }
 .logo h2{
     font-size: 2rem;
@@ -426,11 +433,10 @@ nav #menu li a:hover{
     justify-content: center;
     align-items: flex-start;
     font-size: 1rem;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/kimetsu_no_yaiba.jpg");
-    background-size: cover;
     height: calc(100vh - 70px);
 }
 .filme_principal .container{
+    width: 100%;
     padding-left: 1rem;
 }
 .filme_principal .descricao{
@@ -440,21 +446,128 @@ nav #menu li a:hover{
     margin-top: 1rem;
 }
 .titulo{
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .button{
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(0,0,0,.60);
     border: none;
     color: var(--branco);
     padding: 1rem 2rem;
     margin-right: 1rem;
     font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: .3s ease all;
 }
 .button:hover{
     background-color: var(--branco);
     color: var(--preto);
+}
+.button i{
+    margin-right: 8px;
+}
+
+.seta{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite forwards;
+	animation: slide-bottom 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite forwards;
+}
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+    }
+    100% {
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px);
+    }
+  }
+.seta a {
+    color: var(--branco);
+    text-decoration: none;
+}
+.seta a span{
+    font-size: 4rem;
+}
+
+/*main*/
+#main_principal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.box-filme{
+    height: 300px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.box-filme:hover{
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+
+.carrossel-animes h2{
+    margin: 10px 10px;
+}
+
+.play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+}
+.play i{
+    font-size: 2rem;
+    color: var(--preto);
+}
+.box-filme:hover + .play{
+    display: block;
 }
