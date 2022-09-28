@@ -16,6 +16,18 @@
         padding: 1rem;
         font-size: 0.8rem;
     }
+    footer .media{
+        gap: 70px;
+    }
+    .instagram a {
+        font-size: 3rem;
+    }
+    .linkedin a {
+        font-size: 3rem;
+    }
+    .github a {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width:425px){
@@ -51,6 +63,40 @@
 
     .carrossel-animes h2{
         font-size: 1rem;
+    }
+    .assistir{
+        left: 36%;
+        padding: 12px 40px;
+    }
+    
+}
+
+@media screen and (max-width:375px){
+
+    .assistir{
+        left: 35%;
+        padding: 12px 40px;
+    }
+    .media{
+        gap: 80px;
+    }
+    .copy small{
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media screen and (max-width:320px){
+
+    .assistir{
+        left: 30%;
+        padding: 12px 40px;
+    }
+    .media{
+        gap: 80px;
+    }
+    .copy small{
+        font-size: 0.7rem;
     }
     
 }
