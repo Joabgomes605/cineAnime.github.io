@@ -12,7 +12,6 @@ html,body {
 }
 .main{
     width: 100vw;
-    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/kimetsu_no_yaiba_bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
@@ -60,7 +59,8 @@ html,body {
     width: 100%;
     height: calc(100vh - 60px);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 1rem;
 }
 .ficha_tecnica .container{
@@ -110,14 +110,14 @@ html,body {
     transition: .5s;
 }
 .seta{
+    position: relative;
+    bottom: -20%;
+    left: 46%;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 45px;
-    left: 46%;
     -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 	        animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
@@ -145,4 +145,15 @@ html,body {
     font-size: 5rem;
     color: #00e64d;
 }
-/*principal*/
+/*video*/
+.video{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video iframe{
+    width: 90%;
+    height: 600px;
+}
