@@ -157,3 +157,40 @@ html,body {
     width: 90%;
     height: 600px;
 }
+
+@media screen and (max-width:768px) {
+    .container p {
+        display: none;
+    }
+    .container .assistir{
+        width: 30%;
+    }
+
+    .video iframe{
+        width: 85%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container h1{
+        font-size: 2rem;
+    }
+    .caracteristica span{
+        display: none;      
+    }
+    .container .assistir{
+        width: 50%;
+    }
+    .video iframe{
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container h1{
+        font-size: 1.5rem;
+    }
+    
+}
