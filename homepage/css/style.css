@@ -110,6 +110,14 @@ nav #menu li a:hover{
     display: none;
 }
 
+.sair_icon{
+    margin-right: 1.5rem;
+}
+.sair_icon a{
+    color: var(--verde);
+    font-size: 1.3rem;
+}
+
 /*media-query*/
 @media (max-width:768px) {
     .logo{
@@ -179,6 +187,9 @@ nav #menu li a:hover{
     #nav.active #hamburgue::after{
         transform: rotate(-135deg);
         top: -6px;
+    }
+    .sair_icon{
+        margin-right: 1rem;
     }
 }
 
@@ -258,6 +269,9 @@ nav #menu li a:hover{
     #nav.active #hamburgue::after{
         transform: rotate(-135deg);
         top: -6px;
+    }
+    .sair_icon{
+        margin: 0.5rem;
     }
 }
 
@@ -421,6 +435,9 @@ nav #menu li a:hover{
     #nav.active #hamburgue::after{
         transform: rotate(-135deg);
         top: -6px;
+    }
+    .sair_icon{
+        margin:0.1rem;
     }
 }
 
