@@ -111,10 +111,13 @@ nav #menu li a:hover{
 }
 
 .sair_icon{
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: var(--branco);
     margin-right: 1.5rem;
 }
 .sair_icon a{
-    color: var(--verde);
+    color: var(--preto);
     font-size: 1.3rem;
 }
 
